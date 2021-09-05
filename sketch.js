@@ -26,7 +26,7 @@ function setup(){
 
 function draw() {
     background(rgb(169,169,169));
-    arestas=createArestasprites();
+    arestas=createEdgesprites();
     bola.bounceOff(arestas);
 
     
