@@ -8,7 +8,7 @@ function preload(){
 }
 
 function setup(){
-    tela = createTela(800,600);
+    tela = createCanvas(800,600);
 
     bloco1 = createSprite(0,580,360,30);
     bloco1.shapeColor = "blue";
@@ -26,7 +26,7 @@ function setup(){
 
 function draw() {
     background(rgb(169,169,169));
-    arestas=createArestasprites();
+    arestas=createEdgeSprites();
     bola.bounceOff(arestas);
 
     
